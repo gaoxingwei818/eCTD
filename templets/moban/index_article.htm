@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_indexurl /}/skin/images/style.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_indexurl /}/skin/images/nei.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{dede:global.cfg_indexurl /}/skin/images/jquery-1.8.0.min.js"></script>
+<script language="javascript" src="{dede:global.cfg_indexurl /}/skin/images/slide.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_indexurl /}/skin/images/jquery.SuperSlide.2.1.1.js" /></script>
+<script type="text/javascript" src="{dede:global.cfg_indexurl /}/skin/images/public.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_indexurl /}/skin/images/sdmenu.js"></script>
+<script>
+	$(function(){
+		$(".caseCon li").mouseover(function(){
+		var x=$(".caseCon li").index($(this));
+		$(".caseText").hide();
+		$(".caseText").eq(x).show();
+		})
+	});
+</script>
+</head>
+
+<body>
+{dede:include filename="head.htm" /}
+<div class="main" > {dede:include filename="left.htm"/}
+  <div class="main_right">
+    <div class="sitemap">当前位置：{dede:field.position/}</div>
+    <div class="content">
+      <div class="news_xaingxi">{dede:field.title/}</div>
+      <div class="news_author">浏览：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></div>
+      {dede:field.content/} </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

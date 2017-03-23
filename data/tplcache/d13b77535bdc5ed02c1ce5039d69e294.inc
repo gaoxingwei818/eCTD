@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"><img src="{dede:global.cfg_indexurl /}/skin/images/CusMore.jpg" alt="" title="" class="CusMBtn"></a>

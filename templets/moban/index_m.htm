@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="author" content="order by dedesos.com" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl /}/m/skin/css/subpage.css">
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/jquery.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/nav.js"></script>
+<style>
+.head {
+	background: #222c50
+}
+.foot {
+	background: #1e1f24
+}
+.nav {
+	background: #2b2b2b !important
+}
+.nav_color {
+	background: #2b2b2b
+}
+</style>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/search.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/respond.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/sdcms.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/jquery.validator.js"></script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl /}/m/skin/css/master.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl /}/m/skin/css/swiper.css">
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/swipe.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/lihe.js"></script>
+</head>
+<body>
+<!--导航开始--> 
+{dede:include filename="header_m.htm"/} 
+<!--导航结束--> 
+
+<!--内容开始-->
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <!--页头开始-->
+  <div class="header">
+    <div class="head"> <a href="index.php"  title="{dede:global.cfg_webname/}" class="logo"> <img src="{dede:global.cfg_indexurl /}/m/skin/images/logo.png"/> </a>
+      <div class="nav-btn commonfont">&#xe60b;</div>
+    </div>
+  </div>
+  <!--页头结束-->
+  <div class="content content_new"> 
+    <!--幻灯片图片开始-->
+    <div class="bannerfra">
+      <div class="banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper"> {dede:arclist typeid='32' row='3'}
+            <div class="swiper-slide"><img src="[field:picname/]"></div>
+            {/dede:arclist} </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!--幻灯片图片结束--> 
+    
+    <!--产品展示开始-->
+    <div class="product_i common_i_css">
+      <div class="common_i_title">
+        <h2>产品中心</h2>
+        <span>PRODUCT CENTER</span></div>
+      <!--产品分类开始-->
+      <div class="common_i_title_tab"> {dede:channel type='son' row='3' typeid='1' currentstyle="
+        <li><a href='list.php?tid=~id~' ~rel~><span>~typename~</span></a> </li>
+        "} <a href="list.php?tid=[field:id/]" title="[field:typename/]">[field:typename/]</a> {/dede:channel}
+        
+        {dede:type typeid='1'}<a href="list.php?tid=[field:id/]">更多</a>{/dede:type}</div>
+      <!--产品分类结束-->
+      <div class="c"></div>
+      <div class="product_i_list">
+        <ul>
+          {dede:arclist row='4' infolen='100' titlelen='32' typeid='1'}
+          <li><a href="view.php?aid=[field:id/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]" width="320px" height="200px"><span>[field:title/]</span></a></li>
+          {/dede:arclist}
+        </ul>
+        <div class="c"></div>
+      </div>
+    </div>
+    {dede:type typeid='1'}
+    <div class="more_i"><a href="list.php?tid=[field:id/]">查看更多</a></div>
+    {/dede:type} 
+    <!--产品展示结束--> 
+    
+    <!--关于我们开始-->
+    <div class="about_i common_i_css">
+      <div class="common_i_title common_i_title_color5">
+        <h2>关于我们</h2>
+        <span>ABOUT US</span></div>
+      <div class="about_i_text"> {dede:sql sql='Select content from dede_arctype where id=19'} 
+        [field:content  function='cn_substr(html2text(@me),400)'/]
+        {/dede:sql}... </div>
+    </div>
+    {dede:type typeid='19'}
+    <div class="more_i"><a href="list.php?tid=[field:id/]">查看更多</a></div>
+    {/dede:type} 
+    <!--关于我们结束--> 
+    
+    <!--最新资讯开始-->
+    <div class="yewu_i common_i_css">
+      <div class="common_i_title">
+        <h2>最新资讯</h2>
+        <span>THE LATEST INFORMATION</span></div>
+      <div class="yewu_i_list">
+        <ul>
+          {dede:arclist row='3' infolen='100' titlelen='32' typeid='15'}
+          <li>
+            <div class="i_list_pic"><a href="view.php?aid=[field:id/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"></a></div>
+            <div class="i_list_text"><a href="view.php?aid=[field:id/]" title="[field:title/]">
+              <h2 style="font-weight:bold;color:#ff0000">[field:title/]</h2>
+              <strong>2[field:pubdate function="MyDate('Y.m.d',@me)"/]</strong><span>[field:description function="cn_substr(@me,60)"/]...</span></a></div>
+            <div class="c"></div>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    {dede:type typeid='15'}
+    <div class="more_i"><a href="list.php?tid=[field:id/]">查看更多</a></div>
+    {/dede:type} 
+    <!--最新资讯结束--> 
+    
+    <!--案例展示开始-->
+    <div class="product_i common_i_css">
+      <div class="common_i_title common_i_title_color4">
+        <h2>案例展示</h2>
+        <span>CASE SHOW</span></div>
+      <div class="product_i_list_new">
+        <ul>
+          {dede:arclist row='3' infolen='100' titlelen='20' typeid='7'}
+          <li><a href="view.php?aid=[field:id/]" title="[field:title/]"><span>[field:title/]</span><img src="[field:picname/]" alt="[field:title/]" width="320px" height="200px"></a></li>
+          {/dede:arclist}
+        </ul>
+        <div class="c"></div>
+      </div>
+    </div>
+    {dede:type typeid='7'}
+    <div class="more_i"><a href="list.php?tid=[field:id/]">查看更多</a></div>
+    {/dede:type} 
+    <!--案例展示结束--> 
+    
+    <!--联系我们开始-->
+    <div class="common_i_css">
+      <div class="common_i_title">
+        <h2>联系我们</h2>
+        <span>CONTACT US</span></div>
+    </div>
+    <div class="contact">
+      <div><span>这里是您的网站名称</span></div>
+      <div>地址：<span>这里是您的公司地址</span></div>
+      <div>邮箱：<span>这里是您公司的邮箱地址</span></div>
+      <div>电话：<span>+86-0000-96877</span></div>
+    </div>
+    <!--联系我们结束-->
+    
+    <div class="beian">技术支持：<a title="织梦帮" target="_blank" href="http://www.dedesos.com/" >织梦帮</a>　</div>
+  </div>
+  {dede:include filename="footer_m.htm"/} </div>
+<!--内容结束-->
+</body>
+</html>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_asktype` VALUES('1','美丽Q&A','0','0','0','0');
+INSERT INTO `dede_asktype` VALUES('2','数码Q&A','0','0','0','0');

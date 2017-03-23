@@ -1,0 +1,1 @@
+<a href="list.php?tid=[field:id/]" title="返回列表" class="back">返回列表</a>

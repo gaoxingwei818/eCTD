@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','空调','空调','4','14','1446795355','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','立冰','立冰','3','11','1446795513','0','0');

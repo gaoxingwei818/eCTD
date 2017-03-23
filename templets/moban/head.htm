@@ -1,0 +1,51 @@
+<div class="pageTop">
+  <div class="pageTBox">
+    <div class="Fpt">
+      <p>欢迎来到陕西某某电气科技有限公司官方网站！</p>
+      <ul>
+        <li class="linkLI1"><a href="http://www.weibo.com/">新浪微博</a></li>
+        <li class="linkLI2"><a href="http://t.qq.com/">腾讯微博</a></li>
+      </ul>
+    </div>
+    <div class="Spt"> <a href="javascript:;"><img src="{dede:global.cfg_indexurl /}/skin/images/logo.png" alt="" title="" class="logo"></a>
+      <div class="rightTop">
+        <p> {dede:type typeid=19}<a href="[field:typelink/]">[field:typename/]</a>{/dede:type}->
+          {dede:type typeid=25}<a href="[field:typelink/]">[field:typename/]</a>{/dede:type}->
+          {dede:type typeid=31}<a href="[field:typelink/]">[field:typename/]</a>{/dede:type} </p>
+        <ol>
+          <li>13978789898</li>
+          <li>13998987878</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav">
+  <div class="navBox"id="navmenu">
+    <ul class="menu">
+      <li class="mainlevel libh" ><a href="{dede:global.cfg_cmsurl/}/" title="网站首页" class="navList">网站首页</a> </li>
+      {dede:channelartlist typeid='top'}
+      <li class="mainlevel" id="mainlevel_0[field:global.autoindex/]"><a href="{dede:field name='typeurl'/}"  title="{dede:field name='typename'/}" class="navList">{dede:field name='typename'/}</a>
+        <ul id="sub_01" class="menual">
+          {dede:channel type='son' noself='yes'}
+          <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </li>
+      {/dede:channelartlist}
+    </ul>
+  </div>
+</div>
+<div class="full_banner">
+  <div class="bd">
+    <ul>
+      {dede:arclist row=3 typeid=32}
+      <li style="background:url([field:litpic/]) no-repeat center 0"></li>
+      {/dede:arclist}
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+    </ul>
+  </div>
+</div>

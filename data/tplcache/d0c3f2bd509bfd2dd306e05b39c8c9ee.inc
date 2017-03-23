@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"><img src="{dede:global.cfg_indexurl /}/skin/images/profileBtn.jpg" alt="" title=""></a>

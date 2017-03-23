@@ -1,0 +1,1 @@
+<li style="background:url([field:litpic/]) no-repeat center 0"></li>

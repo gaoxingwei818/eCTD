@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl /}/m/skin/css/subpage.css">
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/jquery.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/nav.js"></script>
+<style>
+.head {
+	background: #222c50
+}
+.foot {
+	background: #1e1f24
+}
+.nav {
+	background: #2b2b2b !important
+}
+.nav_color {
+	background: #2b2b2b
+}
+</style>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/respond.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/sdcms.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/jquery.validator.js"></script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl /}/m/skin/css/master.css">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_indexurl /}/m/skin/css/swiper.css">
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/swipe.js"></script>
+<script src="{dede:global.cfg_indexurl /}/m/skin/js/lihe.js"></script>
+</head>
+<body>
+<!--导航开始--> 
+{dede:include filename="header_m.htm"/} 
+<!--导航结束--> 
+
+<!--内容开始-->
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <!--页头开始-->
+  <div class="header">
+    <div class="head"> <a href="index.php" title="首页" class="home-btn commonfont">&#xe608;</a>
+      <p class="top-title">{dede:field name='typename'/}</p>
+      <div class="class-btn"><span class="commonfont">&#xe60a;</span></div>
+      <div class="nav-btn commonfont">&#xe60b;</div>
+    </div>
+    <div class="type">
+      <h1>二级分类：</h1>
+      <ul>
+        {dede:channel type='son' row='10' currentstyle="
+        <li class='hover'><a href='list.php?tid=~id~' ~rel~><span>~typename~</span></a> </li>
+        "}
+        <li><a href="list.php?tid=[field:id/]" title="[field:typename/]">[field:typename/]</a> <span class="commonfont class-down"></span></li>
+        {/dede:channel}
+      </ul>
+    </div>
+  </div>
+  <!--页头结束--> 
+  <!--文章内容开始-->
+  <div class="content">
+    <div class="about">
+      <h1>{dede:field.title/}</h1>
+      <span class="picContent">
+      <p>{dede:field.body/}</p>
+      </span> {dede:prenext get='prewap'/} {dede:prenext get='nextwap'/} {dede:type} <a href="list.php?tid=[field:id/]" title="返回列表" class="back">返回列表</a>{/dede:type}</div>
+  </div>
+  <!--文章内容结束--> 
+  {dede:include filename="footer_m.htm"/} </div>
+<!--内容结束-->
+</body>
+</html>

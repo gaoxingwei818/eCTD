@@ -1,0 +1,981 @@
+/* 织梦帮（dedesos.com）做最好的织梦整站模板下载网站 */
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	color: #4c4c4c;
+	font-family: "微软雅黑";
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+img, input {
+	border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.pageTop {
+	background: url(../images/topBg.jpg) no-repeat center 0;
+	height: 153px;
+}
+.pageTBox {
+	width: 1100px;
+	margin: 0 auto;
+}
+.Fpt {
+	height: 40px;
+	overflow: hidden;
+	line-height: 40px;
+}
+.Fpt p {
+	float: left;
+	color: white;
+	font-size: 14px;
+}
+.Fpt ul, .Fpt ul li {
+	float: right;
+}
+.Fpt ul li {
+	width: 76px;
+	margin-left: 10px;
+}
+.Fpt ul li.linkLI1 {
+	background-image: url(../images/xlwb.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.Fpt ul li.linkLI2 {
+	background-image: url(../images/tewb.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.Fpt ul li a {
+	color: white;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.Spt {
+	clear: both;
+	overflow: hidden;
+	height: 113px;
+}
+.logo {
+	float: left;
+	margin-top: 23px;
+}
+.Spt .rightTop {
+	float: right;
+}
+.Spt .rightTop p {
+	line-height: 30px;
+}
+.Spt .rightTop p, .Spt .rightTop p a {
+	color: white;
+	font-size: 14px;
+}
+.Spt .rightTop ol {
+	background-image: url(../images/phone.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 49px;
+}
+.Spt .rightTop ol li {
+	font-size: 20px;
+	color: white;
+	margin-left: 60px;
+	font-weight: bold;
+}
+.nav {
+	clear: both;
+	height: 54px;
+	background-color: white;
+}
+.navBox {
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.linob {
+	background-image: none !important
+}
+.libh a {
+	width: 157px;
+	font-size: 18px;
+	text-align: center;
+}
+.menu .mainlevel {
+	float: left;
+	line-height: 54px;
+	padding: 0;
+	height: 54px;
+	display: inline;
+	width: 157px;/*IE6 only*/
+}
+.menu .mainlevel a {
+	font-size: 16px;
+	text-decoration: none;
+	height: 54px;
+	line-height: 54px;
+	display: block;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.menu .mainlevel a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #025fb5
+}
+.menu .mainlevel ul {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+}
+.menu .mainlevel li {
+	border-top: 1px solid #fff;
+	background-color: #0972d3;
+	width: 157px;/*IE6 only*/
+}
+.menu .mainlevel li a {
+	color: white;
+}
+.full_banner {
+	width: 100%;
+	position: relative;
+	height: 500px;
+	background: #FFF;
+	overflow: hidden;
+}
+.full_banner .bd {
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.full_banner .bd ul {
+	width: 100% !important;
+}
+.full_banner .bd li {
+	width: 100% !important;
+	float: left;
+	height: 500px;
+	overflow: hidden;
+	text-align: center;
+}
+.full_banner .bd li a {
+	display: block;
+	height: 500px;
+}
+.full_banner .hd {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.full_banner .hd ul {
+	text-align: center;
+}
+.full_banner .hd ul li {
+	cursor: pointer;
+	display: inline-block;
+*display:inline;
+	zoom: 1;
+	width: 40px;
+	height: 8px;
+	margin: 5px;
+	background: url(../images/tg_flash_p.png) -50px 0;
+	overflow: hidden;
+	line-height: 9999px;
+}
+.full_banner .hd ul .on {
+	background-position: 0px 0px;
+}
+.search {
+	height: 50px;
+}
+.searchPart {
+	overflow: hidden;
+	line-height: 50px;
+	width: 1100px;
+	margin: 0 auto;
+}
+.searchPart p {
+	float: left;
+	font-size: 14px;
+}
+.searchPart p a {
+	margin-right: 10px;
+}
+.searchPart p a:hover {
+	text-decoration: underline;
+}
+.searchBox {
+	float: right;
+	width: 320px;
+	height: 40px;
+	background: url(../images/search.png) no-repeat center 0;
+	margin-top: 5px;
+}
+.searchBox input {
+	float: left;
+	width: 248px;
+	height: 30px;
+	margin-left: 18px;
+	margin-top: 5px;
+}
+.searchBox img {
+	float: right;
+	margin-right: 18px;
+	margin-top: 5px;
+}
+.ConPart {
+	clear: both;
+	width: 1100px;
+	margin: 40px auto;
+}
+.coperName {
+	height: 47px;
+	background: url(../images/coperTitle.jpg) no-repeat center 0;
+	margin-bottom: 15px;
+}
+.mr_frbox {
+	height: 115px;
+}
+.mr_frBtnL {
+	float: left;
+	margin: 30px 36px 0px 0px;
+	cursor: pointer;
+	display: inline;
+}
+.mr_frUl {
+	float: left;
+	height: 115px;
+	width: 959px;
+}
+.mr_frBtnR {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.mr_frUl ul li {
+	display: inline;
+	float: left;
+	height: 115px;
+	width: 139px;
+	margin: 0 10px;
+	overflow: hidden;
+}
+.mr_frUl ul li img {
+	display: block;
+	width: 137px;
+	height: 76px;
+	border: 1px solid #ccc;
+}
+.mr_frUl ul li p {
+	line-height: 36px;
+	text-align: center;
+}
+.mr_frUl ul li p a {
+	font-size: 14px;
+}
+.GCenter {
+	clear: both;
+	margin-top: 50px;
+	overflow: hidden;
+	height: 653px;
+}
+.leftGC {
+	float: left;
+	width: 190px;
+}
+.UpGC {
+	border: 2px solid #005494;
+}
+.LeftGCT {
+	height: 49px;
+	background: url(../images/GCName.jpg) no-repeat center 0;
+}
+.leftGCB {
+	background-color: #398acb;
+	padding: 10px 0
+}
+.sdmenu {
+	width: 154px;
+	font-size: 13px;
+	color: white;
+	font-family: "微软雅黑";
+	margin: 0 auto;
+}
+.sdmenu div {
+	overflow: hidden;
+}
+.sdmenu div.collapsed {
+	height: 38px;
+}
+.sdmenu div span {
+	display: block;
+	line-height: 28px;
+	width: 154px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	background: url(../images/GCBg.jpg) no-repeat center 0;
+}
+.sdmenu div.collapsed span {
+	color: white;
+}
+.sdmenu div a {
+	display: block;
+	color: white;
+	font-size: 13px;
+	line-height: 36px;
+	text-decoration: none;
+	height: 36px;
+	background-image: url(../images/GCList.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 25px;
+	border-bottom: 1px solid #3077b5;
+}
+.sdmenu div a:hover {
+	text-decoration: none;
+}
+.leftGCP {
+	margin-top: 10px;
+	height: 150px;
+	background: url(../images/GCPhone.jpg) no-repeat center 0;
+}
+.leftGCP img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.leftGCP dl dd, .leftGCP dl dt {
+	color: white;
+	text-align: center;
+}
+.leftGCP dl dd {
+	font-size: 14px;
+}
+.leftGCP dl dt {
+	font-size: 24px;
+}
+.rightGC {
+	float: right;
+	width: 904px;
+}
+.rightGC li {
+	width: 210px;
+	height: 311px;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	background: url(../images/GCListBg.jpg) no-repeat center 0;
+}
+.rightGC li .PicGC {
+	height: 220px;
+	padding: 20px 0
+}
+.rightGC li .PicGC:hover {
+	border: 4px solid #005494;
+}
+.rightGC li .PicGC img {
+	display: block;
+	margin: 0 auto;
+}
+.rightGC li p {
+	line-height: 40px;
+	text-align: center;
+	height: 40px;
+}
+.rightGC li p a {
+	color: white;
+	font-size: 14px;
+}
+.Ads {
+	background: url(../images/Ads.jpg) no-repeat center 0;
+	clear: both;
+	height: 160px
+}
+.AdsBox {
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.AdsText {
+	width: 340px;
+	float: right;
+	height: 100px;
+	margin-top: 32px;
+}
+.AdsText dl {
+	height: 46px;
+	background-image: url(../images/AdsPhone.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-bottom: 10px;
+}
+.AdsText dl dd {
+	font-size: 14px;
+	color: white;
+}
+.AdsText dl dd, .AdsText dl dt {
+	margin-left: 50px;
+}
+.AdsText dl dt, .AdsText dl dt span {
+	font-size: 20px;
+	color: white;
+}
+.AdsText dl dt span {
+	margin-left: 15px;
+}
+.Cpart01 {
+	clear: both;
+	background: url(../images/part01.jpg) no-repeat center 0;
+}
+.Cintain01 {
+	width: 816px;
+	margin: 0 auto;
+	padding: 235px 0;
+	overflow: hidden;
+	height: 720px;
+}
+.Cintain01 p {
+	height: 130px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.Lcin, .Mcin, .Rcin {
+	width: 272px;
+}
+.Lcin, .Mcin {
+	float: left;
+}
+.Rcin {
+	float: right;
+}
+.Lcin, .Rcin {
+	margin-top: 185px;
+}
+.Lcin p, .Rcin p {
+	color: white;
+	width: 245px;
+}
+.Cintain01 p.p03 {
+	margin-top: 110px;
+	margin-left: 30px;
+}
+.Cintain01 p.p04 {
+	margin-top: 460px;
+}
+.Cintain01 p.p05 {
+	margin-top: 110px;
+	margin-left: 15px;
+}
+.Cintain01 p.p06 {
+	margin-left: 30px;
+}
+.Cpart02 {
+	clear: both;
+	background: url(../images/Adva.jpg) no-repeat center 0
+}
+.Gadva {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 48px;
+}
+.leftAdv, .rightAdv {
+	width: 447px;
+}
+.leftAdv {
+	float: left;
+	margin-top: 385px;
+}
+.leftAdv p {
+	text-align: right
+}
+.rightAdv {
+	float: right;
+	margin-top: 120px;
+}
+.rightAdv p {
+	text-align: left;
+}
+.Gadva p {
+	font-size: 16px;
+	line-height: 30px;
+}
+.pAdva {
+	margin-top: 490px;
+}
+.pAdva2 {
+	margin-top: 470px;
+}
+.Custom {
+	background-color: #e9e9eb;
+	clear: both;
+	height: 638px;
+	padding-top: 44px;
+}
+.CusBox {
+	width: 1100px;
+	margin: 0 auto;
+}
+.CusName {
+	height: 65px;
+	background: url(../images/cusName.jpg) no-repeat center 0;
+	margin-bottom: 30px;
+}
+.CusBox ul {
+	overflow: hidden;
+}
+.CusBox ul li {
+	width: 350px;
+	float: left;
+	height: 472px;
+	margin: 0 8px;
+}
+.CusBox ul li img {
+	display: block;
+	width: 350px;
+	height: 322px;
+}
+.CusBox ul li h3 {
+	text-align: center;
+	line-height: 52px;
+}
+.CusBox ul li h3 a {
+	color: #005494;
+	font-size: 14px;
+}
+.CusBox ul li p {
+	line-height: 24px;
+	height: 80px;
+}
+.CusBox ul li p a {
+	font-size: 14px;
+}
+.CusBox ul li p a:hover {
+	color: #909090;
+}
+.CusMBtn {
+	display: block;
+	margin: 0 auto;
+	width: 144px;
+	height: 34px;
+}
+.ConPart2 {
+	clear: both;
+	width: 1100px;
+	margin: 40px auto;
+	overflow: hidden;
+	height: 710px;
+}
+.leftInfor {
+	float: left;
+	width: 740px;
+}
+.rightInfor {
+	float: right;
+	width: 310px;
+}
+.InforName {
+	height: 40px;
+	border-bottom: 1px solid #ececec;
+	line-height: 40px;
+	overflow: hidden;
+}
+.InforName .BlueLine, .InforName h3, .InforName h1 {
+	float: left;
+}
+.InforName a {
+	float: right;
+	color: #005494;
+	font-size: 14px;
+}
+.InforName .BlueLine {
+	width: 3px;
+	height: 19px;
+	background-color: #003888;
+	margin-top: 10px;
+}
+.InforName h3 {
+	font-size: 18px;
+	color: #003888;
+	margin: 0 15px;
+	font-weight: bold
+}
+.InforName h1 {
+	font-size: 14px;
+	color: #cdcdcd;
+}
+.profile {
+	clear: both;
+	height: 354px;
+	overflow: hidden;
+	margin-top: 35px;
+}
+.movieBox {
+	width: 381px;
+	height: 354px;
+	background: url(../images/movieBg.jpg) no-repeat center 0;
+	float: left;
+}
+.movieBox img {
+	display: block;
+	width: 335px;
+	height: 319px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.proText {
+	float: right;
+	width: 315px;
+}
+.proText h3 {
+	color: #005494;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+	line-height: 30px;
+}
+.proText p {
+	font-size: 14px;
+	line-height: 26px;
+	height: 225px;
+	margin-bottom: 17px;
+}
+.honerLine {
+	clear: both;
+	margin-top: 30px;
+	height: 210px;
+}
+.honerLine ul {
+	overflow: hidden;
+}
+.honerLine ul li {
+	float: left;
+	width: 227px;
+	height: 210px;
+	margin: 0 9px;
+}
+.honerLine ul li .honerBox {
+	width: 227px;
+	height: 165px;
+	background: url(../images/honerBg.jpg) no-repeat center 0;
+}
+.honerLine ul li .honerBox img {
+	display: block;
+	width: 212px;
+	height: 148px;
+	margin: 0px auto;
+	padding-top: 7px;
+}
+.honerLine ul li p {
+	text-align: center;
+	line-height: 40px;
+}
+.honerLine ul li p a {
+	font-size: 14px;
+}
+#demo {
+	overflow: hidden;
+	width: 740px;
+	margin: 0 auto;
+}
+#indemo {
+	float: left;
+	width: 800%;
+}
+#demo1 {
+	float: left;
+}
+#demo2 {
+	float: left;
+}
+.FQA {
+	margin-top: 27px;
+	height: 638px;
+}
+.FQA table td {
+	height: 24px;
+	line-height: 24px;
+}
+.FQA table .ask {
+	background-image: url(../images/ask.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.FQA table .ask a {
+	font-weight: bold;
+	color: #005494;
+}
+.FQA table .answer {
+	background-image: url(../images/answer.jpg);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+}
+.FQA table td a {
+	margin-left: 30px;
+	font-size: 13px;
+}
+.newsLine {
+	clear: both;
+	background: url(../images/newsBg.jpg) no-repeat center 0;
+	padding: 42px 0;
+}
+.newsBox {
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 485px;
+}
+.leftNews {
+	width: 584px;
+	float: left;
+}
+.rightNews {
+	float: right;
+	width: 430px;
+}
+.newsName {
+	height: 54px;
+	line-height: 54px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.newsName h3 {
+	color: white;
+	font-size: 20px;
+	float: left;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.newsName a {
+	float: right;
+	font-size: 14px;
+	color: white;
+}
+.fNewLine {
+	clear: both;
+	overflow: hidden;
+	height: 182px;
+}
+.fNewLine img {
+	display: block;
+	float: left;
+	width: 207px;
+	height: 182px;
+}
+.fNewsTetx {
+	width: 350px;
+	float: right;
+}
+.fNewsTetx h3 {
+	line-height: 40px;
+}
+.fNewsTetx h3 a {
+	color: white;
+	font-size: 16px;
+}
+.fNewsTetx p {
+	font-size: 14px;
+	line-height: 26px;
+	color: white;
+	height: 102px;
+}
+.NewsMore {
+	color: white;
+	font-size: 14px;
+	display: block;
+	line-height: 40px;
+}
+.NewsMore:hover {
+	text-decoration: underline;
+}
+.SNewLine {
+	clear: both;
+	margin-top: 18px;
+}
+.SNewLine div {
+	height: 40px;
+	overflow: hidden;
+	line-height: 40px;
+}
+.SNewLine div img {
+	float: left;
+	margin-top: 15px;
+}
+.SNewLine div h3 {
+	float: left;
+	margin-left: 15px;
+}
+.SNewLine div h3 a {
+	color: white;
+	font-size: 14px;
+}
+.SNewLine div p {
+	float: right;
+	font-size: 14px;
+	color: #8ba8b8;
+}
+.pageBotm {
+	width: 1100px;
+	margin: 30px auto;
+	clear: both;
+}
+.Flink {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.Flink img {
+	float: left;
+}
+.Flink p {
+	float: right;
+	width: 910px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.Flink p a {
+	font-size: 14px;
+	margin: 0 10px;
+}
+.pageBotm h3 {
+	font-size: 14px;
+	text-align: center;
+	line-height: 60px;
+}
+.pageBotm h3 a {
+	margin: 0 10px;
+}
+.BotmPart {
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.BotmPart p {
+	font-size: 14px;
+	line-height: 24px;
+	float: left;
+}
+.BotmPart p span {
+	margin: 0 30px;
+}
+.BotmPart img {
+	float: right;
+	border: 1px solid #ccc;
+}
+.casePart {
+	clear: both;
+	background: url(../images/caseBg.jpg) no-repeat center 0;
+	padding-top: 132px;
+	padding-bottom: 57px;
+}
+.caseCon {
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 560px;
+}
+.caseCol1 {
+	float: left;
+	width: 1100px;
+	margin-right: 20px;
+}
+.caseCon li {
+	width: 260px;
+	height: 260px;
+	margin-bottom: 20px;
+	background-color: #005494;
+	position: relative;
+	float: left;
+	margin-left: 8px;
+	margin-right: 7px;
+}
+.caseCon li .casePShow {
+	display: block;
+	width: 260px;
+	height: 260px;
+}
+.caseText {
+	background: url(../images/shadow.png) no-repeat center 0;
+	height: 64px;
+	padding-top: 113px;
+	padding-bottom: 83px;
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.caseText h3 {
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	line-height: 34px;
+}
+.caseText img {
+	display: block;
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+}
+.caseList8 {
+	background: url(../images/casePic8.jpg) no-repeat center 0;
+}
+.caseList8 img {
+	display: block;
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+.pagination-wrapper {
+	margin: 20px 0;
+}
+.pagination {
+	height: 34px;
+	text-align: center;
+}
+.pagination li {
+	display: inline-block;
+	height: 34px;
+	margin-right: 5px;
+}
+.pagination li a {
+	float: left;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 12px;
+	font-size: 16px;
+	border: 1px solid #dddddd;
+	color: #555555;
+	text-decoration: none;
+}
+.pagination li a:hover {
+	background: #f5f5f5;
+	color: #0099ff;
+}
+.pagination li.thisclass {
+	background: #09f;
+	color: #fff;
+}
+.pagination li.thisclass a, .pagination li.thisclass a:hover {
+	background: transparent;
+	border-color: #09f;
+	color: #fff;
+	cursor: default;
+}

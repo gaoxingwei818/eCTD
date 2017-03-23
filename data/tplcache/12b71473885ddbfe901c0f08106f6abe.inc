@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"><img src="{dede:global.cfg_indexurl /}/skin/images/caseMore.jpg" alt="[field:typename/]" title="[field:typename/]"></a>
